@@ -1,9 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta charset="utf-8">
     <title>nombre del documento</title>
 </head>
 <body>
+    <header>
+        informacion del inicio, logo de la compañia, lema,
+        navegacion tambien esta aca normalmente
+        <nav>elemento de navegacion, tiene links a diferentes partes de la pagina</nav>
+    </header>
     <h1>contenido del documento --cambios visibles--</h1>
+    <div>lista desordenada:
+        <ul>
+            <li>elemento no numerico 1</li>
+            <li>elemento no numerico 2</li>
+            <li>elemento no numerico 3
+                <ul>
+                    <li>elemento no numerico 1 de elemento no numerico 3</li>
+                    <li>elemento no numerico 2 de eleemnto no numerico 3</li>
+                    <li>elemento no numerico 3 de eleemnto no numerico 3</li>
+                </ul>
+            </li>
+            <li>elemento no numerico 4</li>
+        </ul>
+    </div>
+    <div>
+        <ol>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres
+                <ol>
+                    <li>tres punto uno</li>
+                    <li>tres punto dos</li>
+                    <li>tres punto tres</li>
+                </ol>
+            </li>
+            <li>CUATRO</li>
+        </ol>
+    </div>
+    <div>
+        caracteres especiales: (se llaman entity references)
+        <ul>
+            <li>&lt;</li>
+            <li>&amp;</li>
+            <li>&gt;</li>
+            <li>&copy;</li>
+            <li>&quot;</li>
+            <li>Para pegar pedazos de texto y que no se despeguen independientemente de lo largo que sea el texto, 
+            (por razones esteticas) se usa este&nbsp;comando.</li>
+        </ul>
+    </div>
+    <h2>ahora mismo tengo el poder</h2>
+    <section>
+        <h2>links internos</h2>
+        Ahora viene un link a otra pagina en el mismo directorio de esta pagina web, ahi esta el link:
+        <a href="pagina referida.html" title="link a pagina del mismo directorio">link a una pagina en este mismo directorio de html</a>
+
+        <a href="pagina referida.html" title="link a pagina del mismo directorio"><div>el mismo link de arriba pero ahora con un div, es decir, electric bogaloo<br>
+            (esto es mas para logos, si se da cuenta, esta cosa ocupa todo el espacio a la derecha, el link de arriba ocupa solo lo del texto.
+        </div></a>
+    </section>
+    <section>
+        <h2>links externos</h2>
+        Esta parte es de links externos, lo cual es lo normal, en teoria:
+        <a href="https://www.google.com" target="_blank" title="esto va a google simplemente">link a google normal</a>
+        ese link se abre en otra ventana, para no joder en la que se esta ahora mismo
+    </section>
+    <h3>esto es bastante epico, la verdad </h3>
+    <h4>mas texto, menos tamaño </h4>
+    <section>tambien esto tiene secciones
+        <article>como raro, esto es un articulo, nada de especial, un pedazo de la seccion</article>
+        <article>esto tambien es un articulo, quiero ver las diferencias</article>
+    </section>  
+    <h5>aun mas texto, y aun menos tamaño</h5>
+    <h6>logicamente, mas texto y menos tamaño</h6>
+    <h2 id="indices">aqui va a ir un resto de texto, ningun pedazo importante</h2>
+    <section>
+        <ul>
+            <li><a href="#seccion 1">pedazo de texto 1</a></li>
+            <li><a href="#seccion 2">pedazo de texto 2</a></li>
+            <li><a href="#seccion 3">pedazo de texto 3</a></li>
+            <li><a href="#seccion 4">pedazo de texto 4</a></li>
+        </ul>
+    </section>
+    <section id="seccion 1">
+        <h3>pedazo de texto 1</h3>
+        Puede que la tarea que me he impuesto de escribir una historia completa del pueblo romano desde el comienzo mismo de su existencia
+         me recompense por el trabajo invertido en ella, no lo sé con certeza, ni creo que pueda aventurarlo. Porque veo que esta es una práctica 
+         común y antiguamente establecida, cada nuevo escritor está siempre persuadido de que ni lograrán mayor certidumbre en las materias de su 
+         narración, ni superarán la rudeza de la antigüedad en la excelencia de su estilo. Aunque esto sea así, seguirá siendo una gran satisfacción 
+         para mí haber tenido mi parte también en investigar, hasta el máximo de mis capacidades, los anales de la nación más importante del mundo, 
+         con un interés más profundo; y si en tal conjunto de escritores mi propia reputación resulta ocultada, me consuelo con la fama y la grandeza 
+         de aquellos que eclipsen mi fama. El asunto, además, es uno que exige un inmenso trabajo. Se remonta a más de 700 años atrás y, después de un 
+         comienzo modesto y humilde, ha crecido a tal magnitud que empieza a ser abrumador por su grandeza. No me cabe duda, tampoco, que para la mayoría
+         de mis lectores los primeros tiempos y los inmediatamente siguientes, tienen poco atractivo; Se apresurarán a estos tiempos modernos en los que 
+         el poderío de una nación principal es desgastado por el deterioro interno. Yo, en cambio, buscaré una mayor recompensa a mis trabajos en poder 
+         cerrar los ojos ante los males de que nuestra generación ha sido testigo durante tantos años; tanto tiempo, al menos, como estoy dedicando
+         todo mi pensamiento a reproducir los claros registros, libre de toda la ansiedad que pueden perturbar el historiador de su época, aunque
+         no le puedan deformar la verdad.
+    </section>
+    <section id="seccion 2">
+        <h3>pedazo de texto 2</h3>
+        En el año 1878 obtuve el título de doctor en medicina por la Universidad de Londres, asistiendo después en Netley a los cursos que son de 
+        rigor antes de ingresar como médico en el ejército. Concluidos allí mis estudios, fui puntualmente destinado el 5.0 de Fusileros de Northumberland 
+        en calidad de médico ayudante. El regimiento se hallaba por entonces estacionado en la India, y antes de que pudiera unirme a él, estalló la 
+        segunda guerra de Afganistán. Al desembarcar en Bombay me llegó la noticia de que las tropas a las que estaba agregado habían traspuesto la 
+        línea montañosa, muy dentro ya de territorio enemigo. Seguí, sin embargo, camino con muchos otros oficiales en parecida situación a la mía, 
+        hasta Candahar, donde sano y salvo, y en compañía por fin del regimiento, me incorporé sin más dilación a mi nuevo servicio.
+
+        La campaña trajo a muchos honores, pero a mí sólo desgracias y calamidades. Fui separado de mi brigada e incorporado a las tropas de Berkshire,
+         con las que estuve de servicio durante el desastre de Maiwand. En la susodicha batalla una bala de Jezail me hirió el hombro, haciéndose
+         añicos el hueso y sufriendo algún daño la arteria subclavia. Hubiera caído en manos de los despiadados ghazis a no ser por el valor y
+         lealtad de Murray, mi asistente, quien, tras ponerme de través sobre una caballería, logró alcanzar felizmente las líneas británicas.
+    </section>
+    <section id="seccion 3">
+        <h3>pedazo de texto 3</h3>
+        <p>
+        Hace años, y de intento no se señala cuál, hubo en México una causa célebre. Los autos pasaban de 2,000 fojas y pasaban también de manos
+         de un juez a las de otro juez, sin que pudieran concluir. Algunos de los magistrados tuvieron una muerte prematura y muy lejos de ser natural.
+         Personas de categoría y de buena posición social estaban complicadas, y se hicieron, por este y otros motivos, poderosos esfuerzos para 
+         echarle tierra, como se dice comúnmente; pero fue imposible. El escándalo había sido grande, la sociedad de la capital y aun de los Estados
+         había fijado su atención, y se necesitaba un castigo ejemplar para contener desmanes que tomaban grandes proporciones. Se hicieron muchas
+         prisiones, pero a falta de pruebas, los presuntos reos eran puestos en libertad. Al fin llegó a descubrirse el hilo, y varios de los
+         culpables fueron juzgados, condenados a muerte y ejecutados. El principal de ellos, que tenía una posición muy visible, tuvo un fin trágico.
+        </p>
+        <p>
+        De los recuerdos de esta triste historia y de diversos datos incompletos, se ha formado el fondo de esta novela; pero ha debido aprovecharse 
+         la oportunidad para dar una especie de paseo por en medio de una sociedad que ha desaparecido en parte, haciendo de ella, si no pinturas 
+         acabadas, al menos bocetos de cuadros sociales que parecerán hoy tal vez raros y extraños, pues que las costumbres en todas las clases 
+         se han modificado de tal manera que puede decirse sin exageración que desde la mitad de este siglo a lo que va corrido de él, México, 
+         hasta en sus edificios, es otra cosa distinta de lo que era en 1810.
+        </p>
+    </section>
+    <section>
+        <h3><a name="seccion 4">pedazo de texto 4</a></h3>
+        Al inicio de nuevo:
+        <a href="#indices">indice de los textos</a>
+    </section>
+    <section>
+        <h2>imagenes, aqui se hacen pruebas con imagenes</h2>
+        <p>a continuacion unas imagenes:</p>
+        <h2>imagen 1 (esta esta en este directorio):</h2>
+        <img src="ecuacion.jpg" width="589" height="82" alt="imagen random para probar poner una">
+        <p>
+            texto despues de la imagen, no queda pegado en la imagen, lo cual es bueno.
+        </p>
+        <h2>imagen 2 (esta es global, no esta en este directorio)</h2>
+        <img src="https://i.blogs.es/5efe2c/cap_001/450_1000.jpg" width="450" height="292" alt="imagen global random">
+    </section>
+    <aside>informacion relacionada al tema principal, pero no del contenido principal (posts relacionados, cositas asi)</aside>
+    <footer>pie de pagina, aqui van cosas de pie de pagina</footer>
 </body>
 </html>

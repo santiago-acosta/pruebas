@@ -1,0 +1,195 @@
+.verde {
+    background-color: greenyellow;
+}
+.importante{
+    font-style: italic;
+}
+.resaltar{
+    color: red;
+    background-color: black;
+}
+p.importante{
+    color:blueviolet;
+}
+.verde.importante{
+    font-size: large;
+}
+section > article{
+    background-color: cornflowerblue;
+}
+section article{
+    font-size: x-large;            
+}
+section ul{
+    list-style: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid violet;
+    color:white;
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+a:hover, a:active{
+    background-color: yellow;
+    color: green;
+}
+ul li:nth-child(3){
+    font-size: 30px;
+}
+ol li:nth-child(odd){
+    background-color: grey;
+}
+ol li:nth-child(4):hover {
+    background-color: greenyellow;
+}
+.fuente_diferente{
+    font-family: 'Courier New', Courier, monospace;
+    color: #0000ff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: left;
+}
+.fuente_diferente2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#caja{
+    background-color: aqua;
+    padding: 20px;
+    border: 20px solid palevioletred;
+    margin: 40px;
+    width: 300px;
+    box-sizing: border-box;
+}
+#contenido{
+    background-color: coral;
+}
+/* se puede usar de selector "*" para seleccionar todos los elementos 
+de la pagina, tomandolos cada uno como entidades independientes
+esto aplica para propiedades que no se heredan, tales como 
+box-sizing, la cual no aplica si se pone directamente usando body*/
+
+/*al colocar un elemento con margen encima de otro, cuando especifiquemos
+cuanto mide cada margen, el espacio entre ellos corresponde al de mayor tamaño
+tener esto en cuenta si sale algun margen mas pequeño de lo pensado entre dos 
+elementos, a esto se le llama colapsar*/
+
+/*la propiedad overflow es para ver que se hace cuando el contenido no cabe en la caja
+se puede ocultar, mostrar normal, o ponerle barras de navegacion para que despliegue
+el contenido*/
+
+#fondos{
+    width: 1000px;
+    height: 1000px;
+    background: url('numero10.png') no-repeat right center blueviolet;
+}
+/*los elementos a los que se les aplique un float saldran del flujo estandar
+en el que va la pagina, para posicionarse a un lado, en un plano diferente
+podriamos decir, si no se alinea correctamente puede superponerse con 
+un elemento en la misma ubicacion que este ubicado, para salir de los
+elementos con floats y posicionar algo de manera normal colocar el 
+atributo clear, quita lo que este al lado que se le proporcione
+esto solo aplica para derecha o izquierda, no hay float para arriba o abajo, 
+es para poner cosas en paralelo*/
+* {
+    box-sizing: border-box;
+}
+
+#f1{
+    background-color: deeppink;
+}
+
+#p1{
+    background-color: darkorchid;
+    width: 50%;
+    border: 1px solid black;
+    float: right;
+    padding: 10px;
+}
+#p2{
+    background-color: darkorange;
+    width: 50%;
+    border: 1px solid black;
+    float: right;
+    padding: 10px;
+}
+/* para realizar selectores laterales teorizo que puede ser util el float
+para que quede en la seccion lateral sin estorbar ni interrumpir el 
+flujo de lo que se este escribiendo */
+
+/*se puede cambiar el posicionamiento de los elementos tambien utilizando 
+el posicionamiento relativo y absoluto, en el relativo se cambia 
+el estado a relativo y se pueden colocar parametros de a donde se quiere colocar,
+pero su posicion original sera tomada como que aun se mantiene,
+sin embarho, si se pueden poner mas cosas ahi, con base en el relativo se 
+puede especificar las posiciones de otros parametros absolutos, que
+utilizaran esta posicion para medir donde deben estar*/
+
+#cont1{
+    background-color: #22F957;
+    position:relative
+}
+
+#par1{
+    width: 50px;
+    height: 50px;
+    border: solid black 1px;
+    margin-bottom: 15px;
+    background-color: #44D0F0;
+    position: relative;
+    top: 65px;
+    left:65px;
+}
+
+#par2{
+    width: 50px;
+    height: 50px;
+    border: solid black 1px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    background-color: #8B4265;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#par3{
+    width: 50px;
+    height: 50px;
+    border: solid black 1px;
+    margin-bottom: 15px;
+    background-color: #DAADF0;
+}
+
+#par4{
+    width: 50px;
+    height: 50px;
+    border: solid black 1px;
+    margin-bottom: 15px;
+    background-color: #63CBCE;
+}
+/* puedo usar como ancla los relativos como contenedores
+para elementos absolutos dentro de el */
+
+/* atributo @media (min-width:) y @media (max-width:) 
+para desplegar una hoja de estilos dependiente del 
+dispositivo */
+
+/* dividir el ancho de la pagina en 12 columnas, es decir, 
+8,33% de la pantalla cada columna, para organizar la pantalla
+en secciones, es mas facil con esta medida */
+
+/* <meta name="viewport" content="width=device-width, initial-scale=1">
+usar esto en meta para especificar en dispositivos moviles
+que no se debe reajustar el zoom a la pagina, porque ya hay
+un diseño pensado para el tamaño especifico del dispositivo */
+
+/* bootstrap trae codigo de css y javascript que ayuda al 
+funcionamiento de la pagina, son como unos parametros
+por defecto que luego se pueden cambiar, o especificar
+o puntualizar, muy util */
