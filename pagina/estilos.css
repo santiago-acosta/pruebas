@@ -132,7 +132,7 @@ utilizaran esta posicion para medir donde deben estar*/
 
 #cont1{
     background-color: #22F957;
-    position:relative
+    position:relative;
 }
 
 #par1{
@@ -193,3 +193,10 @@ un diseño pensado para el tamaño especifico del dispositivo */
 funcionamiento de la pagina, son como unos parametros
 por defecto que luego se pueden cambiar, o especificar
 o puntualizar, muy util */
+
+/* para usar bootstrap un div debe jugar de contenedor con class="fluid-container" 
+otro div dentro de ese debe jugar de class="row"
+es decir fila, y los divs de dentro deben ser class="column" 
+columnas, con eso se puede usar el sistema de 12 columas
+usar identificadores como xs, sm, md, lg para en que tipo
+de dispositivo aplica cada cosa*/
